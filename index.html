@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // Replace with your Zapier webhook URL
+        const webhookUrl = "https://hooks.zapier.com/hooks/catch/11517513/26akda6/";
+
+        // Trigger the webhook
+        fetch(webhookUrl, { method: "POST", body: JSON.stringify({}) })
+            .then(response => {
+                // Redirect to your target page after the webhook is triggered
+                window.location.href = "https://tally.so/r/mOLylp";
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Still redirect even if the webhook fails
+                window.location.href = "https://tally.so/r/mOLylp";
+            });
+    </script>
+</head>
+<body>
+    <p>Redirecting, please wait...</p>
+</body>
+</html>
